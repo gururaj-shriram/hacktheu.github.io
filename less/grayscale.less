@@ -375,13 +375,17 @@ a {
 
 .content-section {
   //border: 1px solid red;
-  h1, h2, h3 {
+  h1, h4{
+    text-align: left;
+  }
+  h2, h3 {
     font-size:36px;
     color: black;
     text-align:center;
 
   }
-  h4, h5, h6 {
+
+  h5, h6 {
     margin-top:25px;
 
     font-size:24px;
@@ -402,6 +406,11 @@ a {
 
 }
 
+#sponsor-position {
+  vertical-align: top !important;
+  padding-top: 5%;
+}
+
 #contact {
   @media(min-width:768px){
     h2 {
@@ -415,6 +424,7 @@ a {
 .content-body {
   display: table-cell;
   vertical-align: middle;
+
   // img {
   //   display: none;
   //   height: 1px;
@@ -636,17 +646,7 @@ footer {
     }
 }
 
-::-moz-selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: fade(white, 20%);
-}
 
-::selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: fade(white, 20%);
-}
 
 img::selection {
     background: transparent;
@@ -792,4 +792,8 @@ blockquote {
   width:50px;
   height:50px;
 
+}
+
+body::selection{
+  background: #B4DAFF
 }
