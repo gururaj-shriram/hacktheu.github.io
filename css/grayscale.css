@@ -193,7 +193,9 @@ a:focus {
   font-size: 18px;
   text-align: justify;
 }
-.content-section h1,
+.content-section h1 {
+  text-align: left;
+}
 .content-section h4 {
   text-align: left;
 }
@@ -351,6 +353,7 @@ a:focus {
 }
 .persondiv h4 {
   font-size: 18px;
+  text-align: center;
 }
 .persondiv h4 small {
   font-size: 16px;
@@ -507,4 +510,7 @@ body::selection {
   height: 94px;
   margin-right: 20px;
   margin-top: -20px;
+}
+.img-circle {
+  padding-bottom: 2%;
 }
