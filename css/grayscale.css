@@ -226,9 +226,6 @@ a:focus {
     font-size: 80px;
   }
 }
-.col-sm-4 {
-  height: 300px;
-}
 .content-body {
   display: table-cell;
   vertical-align: middle;
