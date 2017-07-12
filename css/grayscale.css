@@ -45,7 +45,7 @@ a:focus {
   background-color: transparent;
 }
 .navbar-custom .navbar-toggle {
-  color: white;
+  color: #005030;
   background-color: #303037;
   font-size: 12px;
 }
@@ -108,7 +108,7 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(0, 80, 48, 0.85);
   }
   .navbar-custom.top-nav-collapse a {
     color: white;
