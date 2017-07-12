@@ -6,7 +6,7 @@
 body {
   width: 100%;
   height: 100%;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Archivo_Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #767676;
   background-attachment: fixed;
   background-color: #EEEEEE;
@@ -21,19 +21,10 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 35px;
+  margin: 0 0 25px;
   text-transform: uppercase;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-p {
-  line-height: 1.5;
-}
-@media (min-width: 768px) {
-  p {
-    line-height: 1.6;
-  }
+  font-family: "Archivo_Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
 }
 a {
   color: #303037;
@@ -46,14 +37,11 @@ a:focus {
   text-decoration: none;
   color: #000001;
 }
-.light {
-  font-weight: 400;
-}
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: none;
   text-transform: uppercase;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Archivo_Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: transparent;
 }
 .navbar-custom .navbar-toggle {
@@ -67,7 +55,6 @@ a:focus {
 }
 .navbar-custom .navbar-brand {
   font-weight: 700;
-  background-color: blue;
 }
 .navbar-custom .navbar-brand:focus {
   outline: none;
@@ -77,7 +64,7 @@ a:focus {
 }
 @media (max-width: 767px) {
   .navbar-custom .nav {
-    background-color: #303037;
+    background-color: white;
   }
 }
 @media (min-width: 768px) {
@@ -121,66 +108,18 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: rgba(50, 50, 60, 0.9);
+    background: rgba(255, 255, 255, 0.7);
   }
   .navbar-custom.top-nav-collapse a {
     color: white;
-  }
-}
-.intro-rockets {
-  display: table;
-  width: 100%;
-  height: 100%;
-  padding: 100px 0;
-  text-align: center;
-  color: white;
-  background: url("../img/intro-bg.gif") center no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-.intro-rockets .intro-body {
-  display: table-cell;
-  vertical-align: middle;
-}
-.intro-rockets .intro-body .brand-heading {
-  font-size: 65px;
-}
-@media (max-width: 767px) {
-  .intro-rockets {
-    height: 100%;
-  }
-}
-@media (min-width: 768px) {
-  .intro-rockets {
-    height: 100%;
-    padding: 0;
-  }
-  .intro-rockets .intro-body .brand-heading {
-    font-size: 65px;
-  }
-}
-.intro-rockets {
-  height: 40%;
-  background: url("../img/rocketcanescover.gif") center no-repeat;
-}
-@media (min-width: 768px) {
-  .intro-rockets {
-    height: 60%;
-  }
-  .intro-rockets h1 {
-    margin-top: 300px;
   }
 }
 .intro {
   display: table;
   width: 100%;
   height: 100%;
-  padding: 100px 0;
-  text-align: center;
   color: white;
-  background: url("../img/intro-bg.gif") center no-repeat;
+  background: url("../img/intro.png") center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -191,7 +130,7 @@ a:focus {
   vertical-align: middle;
 }
 .intro .intro-body p {
-  font-size: 24px;
+  font-size: 20px;
 }
 .intro .intro-body .brand-heading {
   font-size: 125px;
@@ -215,52 +154,6 @@ a:focus {
     font-size: 125px;
   }
   .intro .intro-body .brand-heading .small {
-    font-size: 40px;
-    color: white;
-  }
-}
-.intro-cdr {
-  display: table;
-  width: 100%;
-  height: 100%;
-  padding: 100px 0;
-  text-align: center;
-  color: white;
-  background: #F47321;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-.intro-cdr .intro-body {
-  display: table-cell;
-  vertical-align: middle;
-}
-.intro-cdr .intro-body p {
-  font-size: 24px;
-}
-.intro-cdr .intro-body .brand-heading {
-  font-size: 125px;
-  color: white;
-}
-@media (max-width: 767px) {
-  .intro-cdr {
-    height: 100%;
-  }
-  .intro-cdr .small {
-    font-size: 20px;
-    color: white;
-  }
-}
-@media (min-width: 768px) {
-  .intro-cdr {
-    height: 100%;
-    padding: 0;
-  }
-  .intro-cdr .intro-body .brand-heading {
-    font-size: 125px;
-  }
-  .intro-cdr .intro-body .brand-heading .small {
     font-size: 40px;
     color: white;
   }
@@ -301,13 +194,15 @@ a:focus {
   text-align: justify;
 }
 .content-section h1,
+.content-section h4 {
+  text-align: left;
+}
 .content-section h2,
 .content-section h3 {
   font-size: 36px;
   color: black;
   text-align: center;
 }
-.content-section h4,
 .content-section h5,
 .content-section h6 {
   margin-top: 25px;
@@ -319,6 +214,10 @@ a:focus {
   .content-section {
     text-align: center;
   }
+}
+#sponsor-position {
+  vertical-align: top !important;
+  padding-top: 5%;
 }
 @media (min-width: 768px) {
   #contact h2 {
@@ -458,7 +357,7 @@ a:focus {
 }
 .btn {
   text-transform: uppercase;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Archivo_Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -504,16 +403,6 @@ footer {
 }
 footer p {
   margin: 0;
-}
-::-moz-selection {
-  text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
-}
-::selection {
-  text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
 }
 img::selection {
   background: transparent;
@@ -611,23 +500,11 @@ blockquote {
     font-size: 66px;
   }
 }
-#safac {
-  width: 200px;
-  height: 200px;
+body::selection {
+  background: #B4DAFF;
 }
-#fsgc {
-  width: 200px;
-  height: 200px;
-}
-#tt {
-  width: 400px;
-}
-@media (max-width: 767px) {
-  #tt {
-    width: 80%;
-  }
-}
-#ttlogo {
-  width: 50px;
-  height: 50px;
+#u {
+  height: 94px;
+  margin-right: 20px;
+  margin-top: -20px;
 }
