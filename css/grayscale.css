@@ -137,12 +137,26 @@ a:focus {
   color: white;
 }
 @media (max-width: 767px) {
+  .intro .intro-body .brand-heading {
+    font-size: 80px;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
   .intro {
     height: 100%;
   }
   .intro .small {
-    font-size: 20px;
+    font-size: 10px;
     color: white;
+  }
+  .intro h2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  .intro .banner-social-buttons {
+    text-align: center;
   }
 }
 @media (min-width: 768px) {
@@ -503,11 +517,30 @@ blockquote {
 body::selection {
   background: #B4DAFF;
 }
-#u {
-  height: 94px;
-  margin-right: 20px;
-  margin-top: -20px;
+@media (max-width: 767px) {
+  #u {
+    height: 94px;
+    text-align: center;
+    margin-top: 180px;
+  }
+}
+@media (min-width: 768px) {
+  #u {
+    height: 94px;
+    margin-right: 20px;
+    margin-top: -20px;
+  }
 }
 .img-circle {
   padding-bottom: 2%;
+}
+@media (max-width: 767px) {
+  #mlh-trust-badge {
+    right: 0px;
+    max-width: 20px;
+    min-width: 10px;
+    position: fixed;
+    width: 10%;
+    z-index: 10000;
+  }
 }
