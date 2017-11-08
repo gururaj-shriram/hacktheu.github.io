@@ -225,16 +225,10 @@ ga('send', 'pageview');
   <!-- Schedule -->
   <section id="schedule" class="content-section white-section">
     <div class="container content-body">
-      <div class="row">
+      <h2>Schedule</h2><br /><br /><br /><br />
+      <div id="innerschedule" class="row">
 
-          <h2>Schedule</h2>
-          <div class="col-sm-8 col-sm-offset-2">
-          <p>UHack registration will open at 11am on Saturday, October 28th.
-          Stay tuned for the full schedule!</a>
-          </p>
-        </div>
-      </div>
-    </div>
+    </div></div>
   </section>
 
   <!-- Sponsors -->
@@ -366,8 +360,46 @@ ga('send', 'pageview');
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
   <script src="js/grayscale.min.js"></script>
+  <script>
+    events = [
+      ['Opening Ceremony','Shalala Student Center Grand Ballroom','12:00 - 1:00pm'],
+      ['Hacking Begins!','Shalala Student Center Grand Ballroom','1:00pm'],
+      ['Team Formation','Shalala Student Center Side Ballroom','1:00 - 2:00pm'],
+      ['Workshop: Android Development with Firebase','Shalala Student Center Side Ballroom','4:00 - 5:00pm'],
+      ['Dinner','Shalala Student Center Grand Ballroom','6:00 - 7:00pm'],
+      ['Patio Jam by Hurricane Productions','University Center Patio','6:00 - 8:00pm'],
+      ['Workshop: Web Development with Firebase','Shalala Student Center Side Ballroom','8:00 - 9:00pm'],
+      ['Salsa Lessons by UM SalsaCraze','Moss Terrace','10:00 - 11:00pm'],
+      ['Werewolf with Major League Hacking','Shalala Student Center Side Ballroom','11:00pm - 12:00am'],
+      ['Late Night Snack','Shalala Student Center Grand Ballroom','12:00 - 1:00am'],
+      ['Videogames with UM Videogame Club','Shalala Student Center Side Ballroom','12:00 - 3:00am'],
+      ['Breakfast','Shalala Student Center Grand Ballroom','8:00 - 9:00am'],
+      ['Hacking Ends','Shalala Student Center Grand Ballroom','1:00pm'],
+      ['Lunch','Shalala Student Center Grand Ballroom','1:00 - 2:00pm'],
+      ['Expo','Shalala Student Center Grand Ballroom','2:00 - 3:00pm'],
+      ['Awards','Shalala Student Center Grand Ballroom','3:00 - 4:00pm']
+      // ['event','location','time'],
+    ]
 
-<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000;@media(max-width: 767px){width:1000px;right:0px;max-width:20px;min-width:10px;position:fixed;width:10%;z-index:10000}" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+    function makeScheduleEvent (i) {
+      if (i == 0) {
+        $('#innerschedule').append('<br / ><br /><h2>Saturday</h2>');
+      }
+      if (i == 12) {
+        $('#innerschedule').append('<br / ><br /><h2>Sunday</h2>');
+      }
+        $('#innerschedule').append('<div class="row"><div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-1 col-lg-5 col-lg-offset-2"> \
+            <h5>' + events[i][0] + '</h5> \
+            <span>' + events[i][1] + '</span> \
+          </div><div class="schedule-time col-sm-10 col-sm-offset-1  col-md-4 col-md-offset-0 col-lg-3 col-lg-offset-0"> \
+            <h5>' + events[i][2] + '</h5> \
+        </div></div>');
+    }
+    for (i=0; i<events.length; i++) {
+      makeScheduleEvent(i);
+    }
+  </script>
+  <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000;@media(max-width: 767px){width:1000px;right:0px;max-width:20px;min-width:10px;position:fixed;width:10%;z-index:10000}" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
 </body>
 
 </html>
