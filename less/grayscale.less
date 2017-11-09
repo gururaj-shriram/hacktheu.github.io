@@ -123,7 +123,7 @@ a {
     transition: background .5s ease-in-out,padding .5s ease-in-out;
     &.top-nav-collapse {
       padding: 0;
-      background: rgba(0,80,48,.85);
+      background: @primary;//rgba(0,80,48,.85);
       a {
         color: white;
       }
@@ -138,7 +138,7 @@ a {
   // padding: 100px 0;
   // text-align: center;
   color: white;
-  background: url("../img/intro.png") center no-repeat;
+  background: @miami_green;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -392,6 +392,50 @@ a {
   height: 200px;
   margin-top: 100px;
 }
+//
+// #sponsors {
+//   padding: 0px;
+// }
+.cat-3, .cat-2, .cat-1 {
+  text-align:center;
+}
+
+#shure-logo {
+  height: 150px;
+  @media(max-width:767px) {
+    height: 110px;
+  }
+}
+#citrix-logo {
+  height: 100px;
+  margin-top: 33px;
+}
+#fb-logo {
+  height: 150px;
+}
+#cas-logo {
+  height: 70px;
+  margin-top: 40px;
+}
+#safac-logo {
+  height: 140px;
+
+  @media(max-width:767px) {
+    margin-top: 60px;
+  }
+}
+#vmware-logo {
+  height: 30px;
+  margin-top: 80px;
+}
+#toppel-logo {
+  height: 100px;
+  margin-top: 40px;
+}
+#sg-logo {
+  height: 60px;
+  margin-top: 60px;
+}
 
 @media(min-width:768px) {
   .content-section {
@@ -416,10 +460,12 @@ a {
 .persondiv {
   height:340px;
   h4 {
+    margin-top:20px;
     font-size:18px;
     text-align: center;
     small {
       font-size: 16px;
+      color: black;
     }
   }
 }
@@ -602,16 +648,19 @@ body::selection{
 }
 
 #u {
+
+  height: 400px;
   @media(max-width: 767px){
-    height: 94px;
-    text-align:center;
-    margin-top: 180px;
+
+    margin-top: 0px;
   }
   @media(min-width: 768px){
-    height:94px;
-    margin-right:20px;
     margin-top:-20px;
   }
+}
+
+#uholder {
+  text-align:center;
 }
 
 .img-circle{

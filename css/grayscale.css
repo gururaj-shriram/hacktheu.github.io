@@ -59,7 +59,7 @@ a:focus {
   background-color: transparent;
 }
 .navbar-custom .navbar-toggle {
-  color: #005030;
+  color: #5EBE82;
   background-color: #303037;
   font-size: 12px;
 }
@@ -122,7 +122,7 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: rgba(0, 80, 48, 0.85);
+    background: #303037;
   }
   .navbar-custom.top-nav-collapse a {
     color: white;
@@ -133,7 +133,7 @@ a:focus {
   width: 100%;
   height: 100%;
   color: white;
-  background: url("../img/intro.png") center no-repeat;
+  background: #5EBE82;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -276,14 +276,14 @@ a:focus {
   background-color: #EEEEEE;
 }
 .green-section {
-  background-color: #005030;
+  background-color: #5EBE82;
   color: white;
 }
 .green-section h2 {
   color: white;
 }
 .green-section a {
-  color: #F47321;
+  color: #F37423;
 }
 .green-section a:hover {
   color: rgba(255, 255, 255, 0.8);
@@ -296,14 +296,14 @@ a:focus {
   background-color: transparent;
 }
 #contact {
-  background-color: #005030;
+  background-color: #5EBE82;
   color: white;
 }
 #contact h2 {
   color: white;
 }
 .orange-section {
-  background-color: #F47321;
+  background-color: #F37423;
   color: white;
 }
 .orange-section h2 {
@@ -333,7 +333,7 @@ a:focus {
   color: #3b5998;
 }
 .black-section a {
-  color: #F47321;
+  color: #F37423;
 }
 .black-section a:hover {
   color: rgba(255, 255, 255, 0.8);
@@ -360,6 +360,50 @@ a:focus {
   height: 200px;
   margin-top: 100px;
 }
+.cat-3,
+.cat-2,
+.cat-1 {
+  text-align: center;
+}
+#shure-logo {
+  height: 150px;
+}
+@media (max-width: 767px) {
+  #shure-logo {
+    height: 110px;
+  }
+}
+#citrix-logo {
+  height: 100px;
+  margin-top: 33px;
+}
+#fb-logo {
+  height: 150px;
+}
+#cas-logo {
+  height: 70px;
+  margin-top: 40px;
+}
+#safac-logo {
+  height: 140px;
+}
+@media (max-width: 767px) {
+  #safac-logo {
+    margin-top: 60px;
+  }
+}
+#vmware-logo {
+  height: 30px;
+  margin-top: 80px;
+}
+#toppel-logo {
+  height: 100px;
+  margin-top: 40px;
+}
+#sg-logo {
+  height: 60px;
+  margin-top: 60px;
+}
 @media (min-width: 768px) {
   .content-section {
     padding: 100px 0;
@@ -377,11 +421,13 @@ a:focus {
   height: 340px;
 }
 .persondiv h4 {
+  margin-top: 20px;
   font-size: 18px;
   text-align: center;
 }
 .persondiv h4 small {
   font-size: 16px;
+  color: black;
 }
 .btn {
   text-transform: uppercase;
@@ -393,9 +439,9 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #F47321;
+  border: 1px solid #F37423;
   color: white;
-  background-color: #F47321;
+  background-color: #F37423;
 }
 .btn-default:hover,
 .btn-default:focus {
@@ -531,19 +577,21 @@ blockquote {
 body::selection {
   background: #B4DAFF;
 }
+#u {
+  height: 400px;
+}
 @media (max-width: 767px) {
   #u {
-    height: 94px;
-    text-align: center;
-    margin-top: 180px;
+    margin-top: 0px;
   }
 }
 @media (min-width: 768px) {
   #u {
-    height: 94px;
-    margin-right: 20px;
     margin-top: -20px;
   }
+}
+#uholder {
+  text-align: center;
 }
 .img-circle {
   padding-bottom: 2%;
