@@ -370,19 +370,34 @@ a:focus {
 }
 @media (max-width: 767px) {
   #shure-logo {
-    height: 110px;
+    height: 80px;
   }
 }
 #citrix-logo {
   height: 100px;
   margin-top: 33px;
 }
+@media (max-width: 767px) {
+  #citrix-logo {
+    height: 80px;
+  }
+}
 #fb-logo {
   height: 150px;
+}
+@media (max-width: 767px) {
+  #fb-logo {
+    height: 120px;
+  }
 }
 #cas-logo {
   height: 70px;
   margin-top: 40px;
+}
+@media (max-width: 767px) {
+  #cas-logo {
+    height: 55px;
+  }
 }
 #safac-logo {
   height: 140px;
