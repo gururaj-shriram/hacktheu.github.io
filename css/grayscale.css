@@ -659,3 +659,6 @@ body::selection {
     text-align: right;
   }
 }
+#directions-parking {
+  font-size: 24px;
+}
