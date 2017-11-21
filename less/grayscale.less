@@ -330,6 +330,18 @@ a {
 }
 .orange-section {
   background-color:@miami_orange;
+  .btn-default {
+    border: 1px solid @miami_green;
+    color: white;
+    background-color: @miami_green;
+    &:hover,
+    &:focus {
+      border: 1px solid @primary;
+      outline: none;
+      color: white;
+      background-color: @primary;
+    }
+  }
   h2 {
     color:black;
   }
@@ -417,36 +429,51 @@ a {
   height: 150px;
 }
 #cas-logo {
-  height: 70px;
+  height: 120px;
   @media(max-width:767px) {
     height: 55px;
   }
-  margin-top: 40px;
+  margin-top: 48px;
+  margin-left: 10px;
+}
+#csc-logo {
+  height: 130px;
+  margin-top: 45px;
+  margin-right:30px;
+}
+#coe-logo {
+  height: 120px;
+  margin-top: 50px;
 }
 #safac-logo {
   height: 140px;
   margin-top: 60px;
 }
 #vmware-logo {
-  height: 30px;
-  margin-top: 80px;
+  height: 45px;
+  margin-top: 60px;
 }
 #launchpad-logo {
   height: 100px;
   margin-top: 50px;
 }
 #sg-logo {
+  height: 60px;
+  margin-top: 60px;
+}
+#falafel-logo {
   height: 80px;
+  margin-top: 60px;
+}
+#ibm-logo {
+  height: 70px;
   margin-top: 40px;
 }
-#csc-logo {
-  height: 120px;
+#coursera-logo {
+  height: 80px;
   margin-top: 50px;
 }
-#coe-logo {
-  height: 120px;
-  margin-top: 50px;
-}
+
 
 @media(min-width:768px) {
   .content-section {
